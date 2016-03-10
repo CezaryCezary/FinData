@@ -19,7 +19,6 @@ namespace NewsService
         private readonly ISerializer _serializer;
         private readonly IUrlBuilder _urlBuilder;
         private readonly IPageGetter _pageGetter;
-        private const int MaxNumberOfReportPerPage = 20;
 
         public DateTime LastReportsCheckDateTime { get; set; }
 
@@ -44,10 +43,10 @@ namespace NewsService
         /// <param name="urlBuilder"><see cref="UrlBuilder"/></param>
         public NewsService(IConfiguration config, ISerializer serializer, IPageGetter pageGetter, IUrlBuilder urlBuilder)
         {
-            if (config == null) throw new ArgumentNullException("config");
-            if (serializer == null) throw new ArgumentNullException("serializer");
-            if (pageGetter == null) throw new ArgumentNullException("pageGetter");
-            if (urlBuilder == null) throw new ArgumentNullException("urlBuilder");
+            if (config == null) throw new ArgumentNullException(nameof(config));
+            if (serializer == null) throw new ArgumentNullException(nameof(serializer));
+            if (pageGetter == null) throw new ArgumentNullException(nameof(pageGetter));
+            if (urlBuilder == null) throw new ArgumentNullException(nameof(urlBuilder));
 
             _config = config;
             _serializer = serializer;

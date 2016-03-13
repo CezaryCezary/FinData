@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsServiceTests", "NewsSer
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "FinData.Web", "FinData.Web\FinData.Web.xproj", "{DE390AAA-200C-4306-ABB2-554EA3F9509D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinData.Web.Tests", "FinData.Web.Tests\FinData.Web.Tests.csproj", "{18B1EBCF-628B-40B4-9795-2CB03BFC7073}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DE390AAA-200C-4306-ABB2-554EA3F9509D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE390AAA-200C-4306-ABB2-554EA3F9509D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE390AAA-200C-4306-ABB2-554EA3F9509D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18B1EBCF-628B-40B4-9795-2CB03BFC7073}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18B1EBCF-628B-40B4-9795-2CB03BFC7073}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18B1EBCF-628B-40B4-9795-2CB03BFC7073}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18B1EBCF-628B-40B4-9795-2CB03BFC7073}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

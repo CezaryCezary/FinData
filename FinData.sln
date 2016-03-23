@@ -11,6 +11,8 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "FinData.Web", "FinData.Web\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinData.Web.Tests", "FinData.Web.Tests\FinData.Web.Tests.csproj", "{18B1EBCF-628B-40B4-9795-2CB03BFC7073}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "FinData.Web.IntegrationTests", "FinData.Web.IntegrationTests\FinData.Web.IntegrationTests.xproj", "{2E59FC06-1B8A-46A5-A877-96C3E89D76A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{18B1EBCF-628B-40B4-9795-2CB03BFC7073}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18B1EBCF-628B-40B4-9795-2CB03BFC7073}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18B1EBCF-628B-40B4-9795-2CB03BFC7073}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E59FC06-1B8A-46A5-A877-96C3E89D76A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E59FC06-1B8A-46A5-A877-96C3E89D76A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E59FC06-1B8A-46A5-A877-96C3E89D76A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E59FC06-1B8A-46A5-A877-96C3E89D76A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

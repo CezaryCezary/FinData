@@ -1,0 +1,18 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "FinData.Web.IntegrationTests Class Library",
+  "authors": [ "CezaryWronka" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+    "frameworks": {
+        "dnx451": { },
+        "dnxcore50": { }
+    },
+    "dependencies": {
+        "FinData.Web": "",
+        "xunit": "2.1.0",
+        "xunit.runner.dnx": "2.1.0-rc1-build204"
+    }
+}

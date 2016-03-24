@@ -3,19 +3,6 @@
   "version": 2,
   "targets": {
     "DNX,Version=v4.5.1": {
-      "Coypu/2.10.0": {
-        "type": "package",
-        "dependencies": {
-          "Selenium.Support": "[2.48.0, 3.0.0)",
-          "Selenium.WebDriver": "[2.48.0, 3.0.0)"
-        },
-        "compile": {
-          "lib/net40/Coypu.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Coypu.dll": {}
-        }
-      },
       "EntityFramework.Commands/7.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -143,7 +130,6 @@
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
-          "Coypu": "2.10.0",
           "EntityFramework.Commands": "7.0.0-rc1-final",
           "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
           "Microsoft.AspNet.Authentication.Cookies": "1.0.0-rc1-final",
@@ -162,9 +148,7 @@
           "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final",
-          "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc1-final",
-          "TestStack.BDDfy": "4.2.0",
-          "xunit": "2.1.0"
+          "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc1-final"
         }
       },
       "Ix-Async/1.2.5": {
@@ -1120,6 +1104,25 @@
           "lib/net451/Microsoft.AspNet.StaticFiles.dll": {}
         }
       },
+      "Microsoft.AspNet.TestHost/1.0.0-rc1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Hosting": "1.0.0-rc1-final"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net451/Microsoft.AspNet.TestHost.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.AspNet.TestHost.dll": {}
+        }
+      },
       "Microsoft.AspNet.Tooling.Razor/1.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -1925,33 +1928,6 @@
           "lib/net45/Remotion.Linq.dll": {}
         }
       },
-      "Selenium.Support/2.48.0": {
-        "type": "package",
-        "dependencies": {
-          "Selenium.WebDriver": "2.48.0"
-        },
-        "frameworkAssemblies": [
-          "System.Drawing"
-        ],
-        "compile": {
-          "lib/net40/WebDriver.Support.dll": {}
-        },
-        "runtime": {
-          "lib/net40/WebDriver.Support.dll": {}
-        }
-      },
-      "Selenium.WebDriver/2.48.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Drawing"
-        ],
-        "compile": {
-          "lib/net40/WebDriver.dll": {}
-        },
-        "runtime": {
-          "lib/net40/WebDriver.dll": {}
-        }
-      },
       "System.Collections/4.0.0": {
         "type": "package",
         "compile": {
@@ -2161,15 +2137,6 @@
         },
         "runtime": {
           "lib/net45/_._": {}
-        }
-      },
-      "TestStack.BDDfy/4.2.0": {
-        "type": "package",
-        "compile": {
-          "lib/net40/TestStack.BDDfy.dll": {}
-        },
-        "runtime": {
-          "lib/net40/TestStack.BDDfy.dll": {}
         }
       },
       "xunit/2.1.0": {
@@ -2403,8 +2370,7 @@
           "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final",
-          "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc1-final",
-          "xunit": "2.1.0"
+          "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc1-final"
         }
       },
       "Ix-Async/1.2.5": {
@@ -3216,6 +3182,20 @@
         },
         "runtime": {
           "lib/dotnet5.4/Microsoft.AspNet.StaticFiles.dll": {}
+        }
+      },
+      "Microsoft.AspNet.TestHost/1.0.0-rc1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Hosting": "1.0.0-rc1-final",
+          "System.Diagnostics.Contracts": "4.0.1-beta-23516",
+          "System.Net.Http": "4.0.1-beta-23516"
+        },
+        "compile": {
+          "lib/dotnet5.4/Microsoft.AspNet.TestHost.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet5.4/Microsoft.AspNet.TestHost.dll": {}
         }
       },
       "Microsoft.AspNet.Tooling.Razor/1.0.0-rc1-final": {
@@ -5188,19 +5168,6 @@
       }
     },
     "DNX,Version=v4.5.1/win7-x86": {
-      "Coypu/2.10.0": {
-        "type": "package",
-        "dependencies": {
-          "Selenium.Support": "[2.48.0, 3.0.0)",
-          "Selenium.WebDriver": "[2.48.0, 3.0.0)"
-        },
-        "compile": {
-          "lib/net40/Coypu.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Coypu.dll": {}
-        }
-      },
       "EntityFramework.Commands/7.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -5328,7 +5295,6 @@
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
-          "Coypu": "2.10.0",
           "EntityFramework.Commands": "7.0.0-rc1-final",
           "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
           "Microsoft.AspNet.Authentication.Cookies": "1.0.0-rc1-final",
@@ -5347,9 +5313,7 @@
           "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final",
-          "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc1-final",
-          "TestStack.BDDfy": "4.2.0",
-          "xunit": "2.1.0"
+          "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc1-final"
         }
       },
       "Ix-Async/1.2.5": {
@@ -6308,6 +6272,25 @@
           "lib/net451/Microsoft.AspNet.StaticFiles.dll": {}
         }
       },
+      "Microsoft.AspNet.TestHost/1.0.0-rc1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Hosting": "1.0.0-rc1-final"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net451/Microsoft.AspNet.TestHost.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.AspNet.TestHost.dll": {}
+        }
+      },
       "Microsoft.AspNet.Tooling.Razor/1.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -7113,33 +7096,6 @@
           "lib/net45/Remotion.Linq.dll": {}
         }
       },
-      "Selenium.Support/2.48.0": {
-        "type": "package",
-        "dependencies": {
-          "Selenium.WebDriver": "2.48.0"
-        },
-        "frameworkAssemblies": [
-          "System.Drawing"
-        ],
-        "compile": {
-          "lib/net40/WebDriver.Support.dll": {}
-        },
-        "runtime": {
-          "lib/net40/WebDriver.Support.dll": {}
-        }
-      },
-      "Selenium.WebDriver/2.48.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Drawing"
-        ],
-        "compile": {
-          "lib/net40/WebDriver.dll": {}
-        },
-        "runtime": {
-          "lib/net40/WebDriver.dll": {}
-        }
-      },
       "System.Collections/4.0.0": {
         "type": "package",
         "compile": {
@@ -7351,15 +7307,6 @@
           "lib/net45/_._": {}
         }
       },
-      "TestStack.BDDfy/4.2.0": {
-        "type": "package",
-        "compile": {
-          "lib/net40/TestStack.BDDfy.dll": {}
-        },
-        "runtime": {
-          "lib/net40/TestStack.BDDfy.dll": {}
-        }
-      },
       "xunit/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -7471,19 +7418,6 @@
       }
     },
     "DNX,Version=v4.5.1/win7-x64": {
-      "Coypu/2.10.0": {
-        "type": "package",
-        "dependencies": {
-          "Selenium.Support": "[2.48.0, 3.0.0)",
-          "Selenium.WebDriver": "[2.48.0, 3.0.0)"
-        },
-        "compile": {
-          "lib/net40/Coypu.dll": {}
-        },
-        "runtime": {
-          "lib/net40/Coypu.dll": {}
-        }
-      },
       "EntityFramework.Commands/7.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -7611,7 +7545,6 @@
         "type": "project",
         "framework": "DNX,Version=v4.5.1",
         "dependencies": {
-          "Coypu": "2.10.0",
           "EntityFramework.Commands": "7.0.0-rc1-final",
           "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
           "Microsoft.AspNet.Authentication.Cookies": "1.0.0-rc1-final",
@@ -7630,9 +7563,7 @@
           "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final",
-          "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc1-final",
-          "TestStack.BDDfy": "4.2.0",
-          "xunit": "2.1.0"
+          "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc1-final"
         }
       },
       "Ix-Async/1.2.5": {
@@ -8591,6 +8522,25 @@
           "lib/net451/Microsoft.AspNet.StaticFiles.dll": {}
         }
       },
+      "Microsoft.AspNet.TestHost/1.0.0-rc1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Hosting": "1.0.0-rc1-final"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net451/Microsoft.AspNet.TestHost.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.AspNet.TestHost.dll": {}
+        }
+      },
       "Microsoft.AspNet.Tooling.Razor/1.0.0-rc1-final": {
         "type": "package",
         "dependencies": {
@@ -9396,33 +9346,6 @@
           "lib/net45/Remotion.Linq.dll": {}
         }
       },
-      "Selenium.Support/2.48.0": {
-        "type": "package",
-        "dependencies": {
-          "Selenium.WebDriver": "2.48.0"
-        },
-        "frameworkAssemblies": [
-          "System.Drawing"
-        ],
-        "compile": {
-          "lib/net40/WebDriver.Support.dll": {}
-        },
-        "runtime": {
-          "lib/net40/WebDriver.Support.dll": {}
-        }
-      },
-      "Selenium.WebDriver/2.48.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Drawing"
-        ],
-        "compile": {
-          "lib/net40/WebDriver.dll": {}
-        },
-        "runtime": {
-          "lib/net40/WebDriver.dll": {}
-        }
-      },
       "System.Collections/4.0.0": {
         "type": "package",
         "compile": {
@@ -9632,15 +9555,6 @@
         },
         "runtime": {
           "lib/net45/_._": {}
-        }
-      },
-      "TestStack.BDDfy/4.2.0": {
-        "type": "package",
-        "compile": {
-          "lib/net40/TestStack.BDDfy.dll": {}
-        },
-        "runtime": {
-          "lib/net40/TestStack.BDDfy.dll": {}
         }
       },
       "xunit/2.1.0": {
@@ -9874,8 +9788,7 @@
           "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final",
-          "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc1-final",
-          "xunit": "2.1.0"
+          "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc1-final"
         }
       },
       "Ix-Async/1.2.5": {
@@ -10690,6 +10603,20 @@
         },
         "runtime": {
           "lib/dotnet5.4/Microsoft.AspNet.StaticFiles.dll": {}
+        }
+      },
+      "Microsoft.AspNet.TestHost/1.0.0-rc1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Hosting": "1.0.0-rc1-final",
+          "System.Diagnostics.Contracts": "4.0.1-beta-23516",
+          "System.Net.Http": "4.0.1-beta-23516"
+        },
+        "compile": {
+          "lib/dotnet5.4/Microsoft.AspNet.TestHost.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet5.4/Microsoft.AspNet.TestHost.dll": {}
         }
       },
       "Microsoft.AspNet.Tooling.Razor/1.0.0-rc1-final": {
@@ -13362,8 +13289,7 @@
           "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final",
-          "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc1-final",
-          "xunit": "2.1.0"
+          "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc1-final"
         }
       },
       "Ix-Async/1.2.5": {
@@ -14178,6 +14104,20 @@
         },
         "runtime": {
           "lib/dotnet5.4/Microsoft.AspNet.StaticFiles.dll": {}
+        }
+      },
+      "Microsoft.AspNet.TestHost/1.0.0-rc1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Hosting": "1.0.0-rc1-final",
+          "System.Diagnostics.Contracts": "4.0.1-beta-23516",
+          "System.Net.Http": "4.0.1-beta-23516"
+        },
+        "compile": {
+          "lib/dotnet5.4/Microsoft.AspNet.TestHost.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet5.4/Microsoft.AspNet.TestHost.dll": {}
         }
       },
       "Microsoft.AspNet.Tooling.Razor/1.0.0-rc1-final": {
@@ -16735,17 +16675,6 @@
       "type": "project",
       "path": "../FinData.Web/project.json"
     },
-    "Coypu/2.10.0": {
-      "type": "package",
-      "sha512": "BdFJtGT0CVml+oz8QBSWYw3G+2fA5dplv4+W9Ky0F6Ru0a2HrnYl47JpSq2tJkfEMP/ObRw+gWT51x4vwarwyg==",
-      "files": [
-        "Coypu.2.10.0.nupkg",
-        "Coypu.2.10.0.nupkg.sha512",
-        "Coypu.nuspec",
-        "lib/net40/Coypu.dll",
-        "lib/net40/Coypu.XML"
-      ]
-    },
     "EntityFramework.Commands/7.0.0-rc1-final": {
       "type": "package",
       "serviceable": true,
@@ -17510,6 +17439,20 @@
         "Microsoft.AspNet.StaticFiles.1.0.0-rc1-final.nupkg",
         "Microsoft.AspNet.StaticFiles.1.0.0-rc1-final.nupkg.sha512",
         "Microsoft.AspNet.StaticFiles.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.TestHost/1.0.0-rc1-final": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "IuOh9iR7jgpaQo6nsJodaav7EcFsgPbr35m9suApN60KSYvM9BBgictmGCrQlcrc3d08kE8Ol4x1oKE5q/zceg==",
+      "files": [
+        "lib/dotnet5.4/Microsoft.AspNet.TestHost.dll",
+        "lib/dotnet5.4/Microsoft.AspNet.TestHost.xml",
+        "lib/net451/Microsoft.AspNet.TestHost.dll",
+        "lib/net451/Microsoft.AspNet.TestHost.xml",
+        "Microsoft.AspNet.TestHost.1.0.0-rc1-final.nupkg",
+        "Microsoft.AspNet.TestHost.1.0.0-rc1-final.nupkg.sha512",
+        "Microsoft.AspNet.TestHost.nuspec"
       ]
     },
     "Microsoft.AspNet.Tooling.Razor/1.0.0-rc1-final": {
@@ -18656,32 +18599,6 @@
         "runtime.win7-x86.System.Data.SqlClient.sni.4.0.0-beta-23516.nupkg.sha512",
         "runtime.win7-x86.System.Data.SqlClient.sni.nuspec",
         "runtimes/win7-x86/native/sni.dll"
-      ]
-    },
-    "Selenium.Support/2.48.0": {
-      "type": "package",
-      "sha512": "z5B9iahJvlW63vOMbaiowUuicyV+xDQLuU+795XkCba/ITICjklfC4IjJb3HGwikwLRzhpWHK0Mbom+deHOzmg==",
-      "files": [
-        "lib/net35/WebDriver.Support.dll",
-        "lib/net35/WebDriver.Support.xml",
-        "lib/net40/WebDriver.Support.dll",
-        "lib/net40/WebDriver.Support.xml",
-        "Selenium.Support.2.48.0.nupkg",
-        "Selenium.Support.2.48.0.nupkg.sha512",
-        "Selenium.Support.nuspec"
-      ]
-    },
-    "Selenium.WebDriver/2.48.0": {
-      "type": "package",
-      "sha512": "/30pRgY1jEp8JIUTCuovsmGeC+vSsGrngi2azW3gi828hqTm1wb+YP54q16POYN7mvJCLF8XM3FExfCri0fjiw==",
-      "files": [
-        "lib/net35/WebDriver.dll",
-        "lib/net35/WebDriver.xml",
-        "lib/net40/WebDriver.dll",
-        "lib/net40/WebDriver.xml",
-        "Selenium.WebDriver.2.48.0.nupkg",
-        "Selenium.WebDriver.2.48.0.nupkg.sha512",
-        "Selenium.WebDriver.nuspec"
       ]
     },
     "System.AppContext/4.0.0": {
@@ -22644,17 +22561,6 @@
         "System.Xml.XDocument.nuspec"
       ]
     },
-    "TestStack.BDDfy/4.2.0": {
-      "type": "package",
-      "sha512": "jmsao58ISGKZHLd2VtLjFk83ci5GfZH2gr0+wwsgtsjO0+ZreHeRWGv28rfpJxGr5DuitGO7Sq8E85vqwcU55w==",
-      "files": [
-        "lib/net40/TestStack.BDDfy.dll",
-        "lib/net40/TestStack.BDDfy.xml",
-        "TestStack.BDDfy.4.2.0.nupkg",
-        "TestStack.BDDfy.4.2.0.nupkg.sha512",
-        "TestStack.BDDfy.nuspec"
-      ]
-    },
     "xunit/2.1.0": {
       "type": "package",
       "sha512": "u/7VQSOSXa7kSG4iK6Lcn7RqKZQ3hk7cnyMNVMpXHSP0RI5VQEtc44hvkG3LyWOVsx1dhUDD3rPAHAxyOUDQJw==",
@@ -22823,7 +22729,8 @@
     "": [
       "FinData.Web ",
       "xunit >= 2.1.0",
-      "xunit.runner.dnx >= 2.1.0-rc1-build204"
+      "xunit.runner.dnx >= 2.1.0-rc1-build204",
+      "Microsoft.AspNet.TestHost >= 1.0.0-rc1-final"
     ],
     "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": []
